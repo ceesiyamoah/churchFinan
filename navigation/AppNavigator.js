@@ -8,7 +8,14 @@ const Stack = createNativeStackNavigator();
 const AppNavigator = () => {
 	return (
 		<NavigationContainer>
-			<Stack.Navigator>
+			<Stack.Navigator
+				screenOptions={{
+					headerTitleAlign: 'center',
+					headerTitleStyle: {
+						fontWeight: 'bold',
+					},
+				}}
+			>
 				<Stack.Screen
 					name='Auth'
 					component={AuthScreen}
